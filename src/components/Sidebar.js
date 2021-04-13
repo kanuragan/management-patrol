@@ -23,7 +23,7 @@ const Sidebar = () => {
                                 <NavLink eventKey="2" to="/dashboard" className="nav-link">
                                     <i className="nav-icon fas fa-home"></i>
                                     <p>
-                                        Home
+                                        Home Patrol
                                     </p>
                                 </NavLink>
                             </li>
