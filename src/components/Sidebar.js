@@ -24,7 +24,7 @@ const Sidebar = () => {
                                 <NavLink eventKey="2" as={NavLink} to="/dashboard" className="nav-link">
                                     <i className="nav-icon fas fa-home"></i>
                                     <p>
-                                        Home Huda
+                                        Home
                                     </p>
                                 </NavLink>
                             </li>
