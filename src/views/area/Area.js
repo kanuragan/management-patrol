@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { NavLink } from 'react-router-dom';
 import Contentheader from '../../components/Contentheader';
@@ -7,6 +7,11 @@ import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 
 function Area() {
+    
+    useEffect(() =>  {
+        document.body.className = 'sidebar-closed sidebar-collapse';
+    });
+
     return (
         <div className="wrapper">
 

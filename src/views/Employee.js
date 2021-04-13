@@ -6,13 +6,19 @@ import Sidebar from '../components/Sidebar';
 
 function Employee(props) {
 
+    useEffect(() =>  {
+        document.body.className = 'sidebar-closed sidebar-collapse';
+    });
+
     return (
             <div className="wrapper">
 
                 <Header />
 
 
-                <Sidebar />
+                <Sidebar 
+                    
+                />
 
                 <div className="content-wrapper">
 

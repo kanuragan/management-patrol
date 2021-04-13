@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Contentheader from '../components/Contentheader';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 
 function Changepassword() {
+    
+    useEffect(() =>  {
+        document.body.className = 'sidebar-closed sidebar-collapse';
+    });
+
     return (
             <div className="wrapper">
 

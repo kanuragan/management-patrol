@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Contentheader from '../../components/Contentheader';
 import Footer from '../../components/Footer';
@@ -9,6 +9,10 @@ require('es6-promise').polyfill()
 require('isomorphic-fetch');
 
 function List() {
+    useEffect(() =>  {
+        document.body.className = 'sidebar-closed sidebar-collapse';
+    });
+
     return (
         <div className="wrapper">
 

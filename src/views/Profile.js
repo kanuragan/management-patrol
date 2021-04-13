@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Contentheader from '../components/Contentheader';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -7,6 +7,11 @@ import fProfile from 'admin-lte/dist/img/user4-128x128.jpg';
 import Timelinecard from '../components/Timelinecard';
 
 function Profile(props) {
+    
+    useEffect(() =>  {
+        document.body.className = 'sidebar-closed sidebar-collapse';
+    });
+
     return (
         <div className="wrapper">
 
