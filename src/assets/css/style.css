@@ -1,0 +1,47 @@
+body {
+    font-size: 11px!important;
+}
+
+.nav-header {
+    font-size: 13px !important;
+}
+
+.content-header {
+    padding: 0px !important;
+}
+
+.card .card-title {
+    font-size: 14px!important;
+}
+
+.card-body {
+    font-size: 11px;
+}
+
+.form-control {
+    font-size: 11px !important;
+}
+
+.inner p {
+    font-size: 11px;
+}
+
+.leaflet-container {
+    height: 430px !important;
+} 
+
+.table th , .table td {
+    padding: 0.5rem !important;
+    font-size: 10px !important;
+}
+
+#timeline {
+    max-height: 450px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#settings {
+    max-height: 450px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
