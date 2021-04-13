@@ -11,15 +11,15 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.get('/ping', function (req, res) {
  return res.send('pong');
 });
-app.get('/*', (req, res) => {
-    res.sendFile(path.resolve(__dirname + '/client/build/index.html'))
-})
-app.listen(port);
+// app.get('/*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname + '/client/build/index.html'))
+// })
+// app.listen(port);
 
-// app.get('/*', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`)
-// }) //development
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+}) //development
