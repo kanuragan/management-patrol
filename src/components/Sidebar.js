@@ -9,7 +9,7 @@ const Sidebar = () => {
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
 
-                <NavLink to="/dashboard" className="brand-link">
+                <NavLink eventKey="1" to="/dashboard" className="brand-link">
                     <img src={imgLogo} className="brand-image img-circle elevation-3"/>
                     <span className="brand-text font-weight-light">Management Patrol</span>
                 </NavLink>
@@ -20,7 +20,7 @@ const Sidebar = () => {
                             data-accordion="false">
                             <li className="nav-header">MAIN</li>
                             <li className="nav-item">
-                                <NavLink to="/dashboard" className="nav-link">
+                                <NavLink eventKey="2" to="/dashboard" className="nav-link">
                                     <i className="nav-icon fas fa-home"></i>
                                     <p>
                                         Home
@@ -28,7 +28,7 @@ const Sidebar = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/employee" className="nav-link">
+                                <NavLink eventKey="3" to="/employee" className="nav-link">
                                     <i className="nav-icon fas fa-users"></i>
                                     <p>
                                         Employee
@@ -36,7 +36,7 @@ const Sidebar = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/area" className="nav-link">
+                                <NavLink eventKey="4" to="/area" className="nav-link">
                                     <i className="nav-icon fas fa-map"></i>
                                     <p>
                                         Asset Area
@@ -44,7 +44,7 @@ const Sidebar = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/assignment" className="nav-link">
+                                <NavLink eventKey="5" to="/assignment" className="nav-link">
                                     <i className="nav-icon fas fa-tasks"></i>
                                     <p>
                                         Assignment
@@ -53,7 +53,7 @@ const Sidebar = () => {
                             </li>
                             <li className="nav-header">ACCOUNT</li>
                             <li className="nav-item">
-                                <NavLink to="/profile" className="nav-link">
+                                <NavLink eventKey="6" to="/profile" className="nav-link">
                                     <i className="nav-icon fas fa-user"></i>
                                     <p>
                                         Profile
@@ -61,7 +61,7 @@ const Sidebar = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/change_password" className="nav-link">
+                                <NavLink eventKey="7" to="/change_password" className="nav-link">
                                     <i className="nav-icon fas fa-lock"></i>
                                     <p>
                                         Change Password
