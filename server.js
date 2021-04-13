@@ -14,7 +14,7 @@ app.get('/ping', function (req, res) {
 app.get('/*', (req, res) => {
     res.sendFile(path.resolve(__dirname + '/client/build/index.html'))
 })
-app.listen(port); production in heroku
+app.listen(port);
 
 // app.get('/*', function (req, res) {
 //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
