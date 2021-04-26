@@ -21,14 +21,6 @@ object-assign
    */
 
 /*!
- * @overview es6-promise - a tiny implementation of Promises/A+.
- * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
- * @license   Licensed under MIT license
- *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
- * @version   v4.2.8+1e68dce6
- */
-
-/*!
  * AdminLTE v3.1.0 (https://adminlte.io)
  * Copyright 2014-2021 Colorlib <https://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
@@ -46,6 +38,14 @@ object-assign
  * https://jquery.org/license
  *
  * Date: 2021-03-02T17:08Z
+ */
+
+/*! DataTables 1.10.24
+ * ©2008-2021 SpryMedia Ltd - datatables.net/license
+ */
+
+/*! DataTables styling integration
+ * ©2018 SpryMedia Ltd - datatables.net/license
  */
 
 /** @license React v0.20.2

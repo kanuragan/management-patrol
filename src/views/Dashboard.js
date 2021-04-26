@@ -8,7 +8,7 @@ import Cardinfo from '../components/Cardinfo';
 function Dashboard(props) {
 
     useEffect(() =>  {
-        document.body.className = 'sidebar-closed sidebar-collapse';
+        document.body.className = 'hold-transition sidebar-mini layout-fixed';
     });
 
 

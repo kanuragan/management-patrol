@@ -4,10 +4,11 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 
+
 function Employee(props) {
 
     useEffect(() =>  {
-        document.body.className = 'sidebar-closed sidebar-collapse';
+        document.body.className = 'hold-transition sidebar-mini layout-fixed';
     });
 
     return (
@@ -41,173 +42,175 @@ function Employee(props) {
                                 </div>
                             </div>
                             <div className="card-body">
-                                <table id="employee" className="table table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>NIK</th>
-                                            <th>NAMA</th>
-                                            <th>JABATAN</th>
-                                            <th>DEPARTEMENT</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                        <tr>
-                                            <td>2012535</td>
-                                            <td>HUDA</td>
-                                            <td>OFFICER</td>
-                                            <td>SECURITY</td>
-                                            <th>DELETE | EDIT</th>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div className="table-responsive">
+                                    <table id="employee" className="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>NIK</th>
+                                                <th>NAMA</th>
+                                                <th>JABATAN</th>
+                                                <th>DEPARTEMENT</th>
+                                                <th>ACTION</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                            <tr>
+                                                <td>2012535</td>
+                                                <td>HUDA</td>
+                                                <td>OFFICER</td>
+                                                <td>SECURITY</td>
+                                                <th>DELETE | EDIT</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div className="card-footer">
 

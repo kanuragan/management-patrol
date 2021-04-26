@@ -5,12 +5,28 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 
-require('es6-promise').polyfill()
-require('isomorphic-fetch');
+//jquery
+import "datatables.net-dt/js/dataTables.dataTables"
+import "datatables.net-dt/css/jquery.dataTables.min.css"
+import $ from 'jquery'
 
 function List() {
     useEffect(() =>  {
-        document.body.className = 'sidebar-closed sidebar-collapse';
+        //init nav
+        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        $('#list-area').DataTable( {
+            "processing": true,
+            "serverSide": true,
+            "ajax":{
+                url :"http://localhost/api/data.php",
+                type: "post",
+                error: function(){
+                    $("#list-area").append('<tbody class="dataku-error"><tr><th colspan="3">Tidak ada data untuk ditampilkan</th></tr></tbody>');
+                    $("#list-area").css("display","none");
+                    
+                }
+            }
+        });
     });
 
     return (
@@ -39,7 +55,18 @@ function List() {
                             </div>
                         </div>
                         <div className="card-body">
-
+                            <div className="table-responsive">
+                                <table id="list-area" className="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>userId</th>
+                                            <th>id</th>
+                                            <th>Title</th>
+                                            <th>action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                         <div className="card-footer">
                             <NavLink to="/area" className="btn btn-sm btn-primary"><i className="fa fa-arrow-left"></i>
