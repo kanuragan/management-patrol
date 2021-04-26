@@ -11,9 +11,8 @@ import "datatables.net-dt/css/jquery.dataTables.min.css"
 import $ from 'jquery'
 
 function List() {
-    useEffect(() =>  {
-        //init nav
-        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+
+    const datatable = () => {
         $('#list-area').DataTable( {
             "processing": true,
             "serverSide": true,
@@ -27,6 +26,12 @@ function List() {
                 }
             }
         });
+    }
+
+    useEffect(() =>  {
+        //init nav
+        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        datatable();
     });
 
     return (
