@@ -9,7 +9,7 @@ import Timelinecard from '../components/Timelinecard';
 function Profile(props) {
     
     useEffect(() =>  {
-        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        document.body.className = 'sidebar-mini layout-fixed';
     });
 
     return (

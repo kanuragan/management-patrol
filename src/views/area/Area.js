@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { NavLink } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import Contentheader from '../../components/Contentheader';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -10,10 +9,10 @@ import Sidebar from '../../components/Sidebar';
 function AddMarkerToClick() {
 
     const [markers, setMarkers] = useState([])
-    const [lat, setLat] = useState(null)
-    const [lng, setLng] = useState(null)
+    const [lat, setLat] = useState(-6.11646)
+    const [lng, setLng] = useState(107.0500644)
     const map = useMapEvents({
-      click(e) {
+      dblclick(e) {
         const newMarker = e.latlng
         setMarkers([...markers, newMarker])
         setLat(newMarker.lat)
@@ -30,12 +29,12 @@ function AddMarkerToClick() {
         )}
       </>
     )
-  }
+}
 
 function Area() {
-
+    
     useEffect(() =>  {
-        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        document.body.className = 'sidebar-mini layout-fixed';
     });
 
     return (
@@ -54,6 +53,7 @@ function Area() {
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">Asset Map</h3>
+
                             <div className="card-tools">
                                 <button type="button" className="btn btn-tool" data-card-widget="collapse" title="Collapse">
                                     <i className="fas fa-minus"></i>

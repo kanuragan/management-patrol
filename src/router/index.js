@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 import Area from '../views/area/Area';
 import List from '../views/area/List';
 import Login from '../views/auth/Login'
@@ -7,13 +7,18 @@ import Changepassword from '../views/Changepassword';
 import Dashboard from '../views/Dashboard';
 import Employee from '../views/Employee';
 import Profile from '../views/Profile';
+import Assignment from '../views/Assignment';
+import Schedule from '../views/Schedule';
 
 function Router(props) {
+    const token_apps = localStorage.getItem('BASEAPPS_ACCESS_TOKEN')
     return (
+        
         <BrowserRouter>
+            {/* {!token_apps ? <Redirect to='/'  /> : <Redirect to='/dashboard' />} */}
             <Switch>
                 <Route exact path='/'>
-                    <Login/>
+                     <Login />
                 </Route>
                 <Route path='/dashboard'>
                     <Dashboard/>
@@ -28,7 +33,13 @@ function Router(props) {
                     <Route path='/area/list-area'>
                         <List/>
                     </Route>
-
+                
+                <Route path='/assignment'>
+                    <Assignment/>
+                </Route>
+                <Route path='/schedule'>
+                    <Schedule/>
+                </Route>
                 <Route path='/profile'>
                     <Profile/>
                 </Route>

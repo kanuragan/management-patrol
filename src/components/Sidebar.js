@@ -52,6 +52,14 @@ const Sidebar = () => {
                                     </p>
                                 </NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink eventKey="5" to="/schedule" className="nav-link">
+                                    <i className="nav-icon fas fa-calendar"></i>
+                                    <p>
+                                        Schedule
+                                    </p>
+                                </NavLink>
+                            </li>
                             <li className="nav-header">ACCOUNT</li>
                             <li className="nav-item">
                                 <NavLink eventKey="6" as={NavLink} to="/profile" className="nav-link">

@@ -4,16 +4,28 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Cardinfo from '../components/Cardinfo';
+import { Redirect } from 'react-router-dom';
 
 function Dashboard(props) {
 
+    const token = localStorage.getItem('BASEAPPS_ACCESS_TOKEN')
+
     useEffect(() =>  {
-        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        document.body.className = 'sidebar-mini layout-fixed';
     });
 
 
     return (
             <div className="wrapper">
+
+            {
+
+            !token ? 
+                <Redirect to='/'  />
+
+            : null
+            
+            }
 
                 <Header />
 

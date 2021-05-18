@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar';
 function Changepassword() {
     
     useEffect(() =>  {
-        document.body.className = 'hold-transition sidebar-mini layout-fixed';
+        document.body.className = 'sidebar-mini layout-fixed';
     });
 
     return (
